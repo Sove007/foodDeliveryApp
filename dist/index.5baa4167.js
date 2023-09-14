@@ -35345,7 +35345,7 @@ const Body = ({})=>{
         getResturants();
     }, []);
     async function getResturants() {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6295061&lng=77.030152&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const data = await fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6295061&lng=77.030152&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         setAllRestaurant(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurant(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
@@ -35543,7 +35543,7 @@ parcelHelpers.export(exports, "IMG_CON_URL", ()=>IMG_CON_URL);
 parcelHelpers.export(exports, "FETCH_URL_MENU", ()=>FETCH_URL_MENU);
 parcelHelpers.export(exports, "shimmer_card_unit", ()=>shimmer_card_unit);
 const IMG_CON_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
-const FETCH_URL_MENU = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.6295061&lng=77.030152&restaurantId=";
+const FETCH_URL_MENU = "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.6295061&lng=77.030152&restaurantId=";
 const shimmer_card_unit = 8;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lJSAi":[function(require,module,exports) {
